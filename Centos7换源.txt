@@ -1,0 +1,9 @@
+1¡¢mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
+
+2¡¢cd /etc/yum.repos.d/
+
+3¡¢wget http://mirrors.163.com/.help/CentOS6-Base-163.repo
+
+4¡¢yum makecache Éú³É»º´æ
+
+5¡¢yum -y update
