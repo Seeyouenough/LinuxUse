@@ -1,0 +1,1 @@
+该linux使用基于Centos 7.0
