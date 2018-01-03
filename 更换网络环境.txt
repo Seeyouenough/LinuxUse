@@ -1,0 +1,7 @@
+1、修改/etc/sysconfig/network
+   修改网关
+
+2、修改/etc/sysconfig/network-scripts/ifcfg-ens33内容
+   更改IP与网关
+   一、改为动态IP，将BOOTPROTO=static  --->  BOOTPROTO=dhcp
+   二、直接更改文件内的IP、网关、

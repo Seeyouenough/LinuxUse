@@ -1,5 +1,19 @@
 CentOS Linux release 7.2.1511 (Core)
 
+首先先卸载centos7 自带的MariaDB
+
+查看当前安装的mariadb包
+rpm -qa | grep mariadb
+
+删除
+rpm -e --nodeps mariadb-libs-5.5.35-3.el7.x86_64
+
+rpm -e --nodeps mariadb-5.5.35-3.el7.x86_64
+
+rpm -e --nodeps mariadb-server-5.5.35-3.el7.x86_64
+
+进行MySQL5.7安装
+
 1、sudo wget -i http://dev.mysql.com/get/mysql57-community-release-el7-7.noarch.rpm
 
 2、sudo yum -y install mysql57-community-release-el7-7.noarch.rpm
