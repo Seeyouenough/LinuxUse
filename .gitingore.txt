@@ -1,0 +1,2 @@
+.gitignore
+teamtalk_centos7Mini.txt
