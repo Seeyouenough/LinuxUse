@@ -1,0 +1,25 @@
+解决：
+（1）conn sys/sys as sysdba;//以DBA的身份登录
+（2）alter user scott account unlock;// 然后解锁
+（3）conn scott/tiger //弹出一个修改密码的对话框，修改一下密码就可以了
+
+具体操作步骤如下：
+C:> sqlplus
+请输入用户名：sys
+输入口令：sys as sysdba //注意：在口令这里输入的密码后面必须要跟上 as sysdba 才可以。
+SQL> alter user scott account unlock;
+用户已更改.
+SQL> commit;
+提交完成.
+SQL> conn scott/tiger
+更改scott口令
+新口令：tiger
+重新键入新口令：tiger
+口令已更改
+已连接。
+
+另一种方法：你打开命令提示符，不要登录直接输入下面：
+sqlplus sys/tiger as sysdba
+以dba方式进入sys帐户；
+alter user scott account unlock;
+给scott用户解锁；

@@ -1,0 +1,7 @@
+git rm --cached filename
+
+git add --all
+
+git commit -m "ignore"
+
+
