@@ -1,0 +1,11 @@
+1、删除数据之前先将外键约束禁用
+SET FOREIGN_KEY_CHECKS=0;
+
+2、进行数据删除，此时不会再因为外键约束而导致错误
+
+3、重新开启外键约束
+SET FOREIGN_KEY_CHECKS=1;
+
+
+查看当前FOREIGN_KEY_CHECKS的值，可用如下命令：
+SELECT @@FOREIGN_KEY_CHECKS;
