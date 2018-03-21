@@ -1,0 +1,2 @@
+在导入web项目时，无法加载相关资源文件的classpath路径，是因为没有将resources文件设置为资源文件。
+我们可以右击resources，Make Director As -> Resources Root 进行设置
